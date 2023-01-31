@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build -t abdelrahman58/django:latest .
-        echo "${{ secrets.DOCKER }}" | docker login -u "abdelrahmana58" --password-stdin
+        echo "${{ secrets.DOCKER }}" | docker login -u "abdelrahman58" --password-stdin
         docker push abdelrahman58:django:latest
